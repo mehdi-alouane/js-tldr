@@ -3,7 +3,7 @@ import React from "react";
 import Chip from "components/Chip";
 import { Property, ObjectExpression } from "components/Typography";
 
-const CHIP_VALUES = ["Array", "String", "Function", "RegExp"];
+const CHIP_VALUES = ["Array", "String" /* "Function", "RegExp" */];
 export const SearchChips = ({ onChange }) => {
   return (
     <div>
