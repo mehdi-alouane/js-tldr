@@ -1,4 +1,4 @@
-@import "../colors";
+@import '../colors';
 
 * {
   box-sizing: border-box;
@@ -17,7 +17,7 @@ body,
 body {
   background-color: $bg;
   color: $white;
-  font-family: "Fira Mono", monospace;
+  font-family: 'Fira Mono', monospace;
 }
 
 h1,
@@ -29,4 +29,12 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0.5em;
+}
+
+a {
+  color: $method;
+
+  &:visited {
+    color: $method;
+  }
 }
