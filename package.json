@@ -1,0 +1,53 @@
+{
+  "name": "js-tldr",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "node-sass": "^4.13.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RusinovAnton/js-tldr.git"
+  },
+  "keywords": [
+    "JS",
+    "ES",
+    "docs",
+    "methods",
+    "Array.prototype",
+    "String.prototype",
+    "Regex.prototype"
+  ],
+  "author": "Anton Rusinov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RusinovAnton/js-tldr/issues"
+  },
+  "homepage": "https://github.com/RusinovAnton/js-tldr#readme"
+}

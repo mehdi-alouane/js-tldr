@@ -1,0 +1,33 @@
+@import "../../colors";
+
+.input {
+  $shadow: 0 0 1rem 0 darken($bg, 2%);
+  $shadow-outline: 0 0 0 2px $cursor;
+
+  appearance: none;
+  background-color: $bg-light;
+  border-radius: 1em;
+  border: 0;
+  box-sizing: content-box;
+  caret-color: $cursor;
+  color: $white;
+  font-family: inherit;
+  font-size: 1rem;
+  height: 1.75rem;
+  outline: none;
+  padding: 0.5em 1em;
+  box-shadow: $shadow;
+
+  &:focus {
+    box-shadow: $shadow, $shadow-outline;
+  }
+
+  &::placeholder {
+    color: $comment;
+  }
+
+  &.size-xl {
+    font-size: 1.5rem;
+    width: 20em;
+  }
+}
