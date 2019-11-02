@@ -4,6 +4,10 @@
   color: $bracket;
 }
 
+.color-comment {
+  color: $comment;
+}
+
 .color-cursor {
   color: $cursor;
 }
@@ -18,4 +22,8 @@
 
 .color-property {
   color: $property;
+}
+
+.color-object {
+  color: $object;
 }

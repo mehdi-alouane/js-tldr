@@ -1,2 +1,16 @@
+@import "../../colors";
+@import "../../mixins";
+
 .chip {
+  @include chip-shape;
+  transition: background-color 0.2s;
+
+  &:empty {
+    display: none;
+  }
+
+  &:active {
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
