@@ -1,24 +1,35 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import cn from 'classnames';
 import MarkdownIt from 'markdown-it';
 import compose from 'lodash/fp/compose';
+import prism from 'prismjs';
 
 import classes from './Markdown.module.scss';
+import './syntax-highlight.scss';
 
 const replaceLinksTarget = htmlString =>
   htmlString.replace('<a href', '<a target="_blank" href');
+
+const md = new MarkdownIt({
+  highlight: function(source, language) {
+    if (!language) return;
+
+    try {
+      return prism.highlight(source, prism.languages[language], language);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+});
+
+const transformMd = compose([replaceLinksTarget, md.render.bind(md)]);
 
 export const Markdown = ({
   component = 'div',
   className,
   source,
-  options,
   ...props
 }) => {
-  const transformMd = useMemo(() => {
-    const md = new MarkdownIt(options);
-    return compose([replaceLinksTarget, md.render.bind(md)]);
-  }, [options]);
   if (!source) return null;
   const html = transformMd(source);
   const MarkdownComponent = component;

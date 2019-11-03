@@ -4,7 +4,7 @@
       "name": "Array",
       "type": "object",
       "description": "",
-      "docs": "./Array",
+      "path": "/docs/Array",
       "methods": {
         "static": ["from", "isArray", "observe", "of"],
         "prototype": [
@@ -47,7 +47,7 @@
       "name": "String",
       "type": "object",
       "description": "",
-      "docs": "./String",
+      "path": "/docs/String",
       "methods": {
         "static": ["fromCharCode", "fromCodePoint", "raw"],
         "prototype": [

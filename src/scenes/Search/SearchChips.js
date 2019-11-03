@@ -1,16 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import Chip from "components/Chip";
-import { Property, ObjectExpression } from "components/Typography";
+import Chip from 'components/Chip';
+import { Property, ObjectExpression } from 'components/Typography';
 
-const CHIP_VALUES = ["Array", "String" /* "Function", "RegExp" */];
+const CHIP_VALUES = ['Array', 'String' /* "Function", "RegExp" */];
 export const SearchChips = ({ onChange }) => {
   return (
     <div>
       {CHIP_VALUES.map(value => (
         <Chip
           key={value}
-          style={{ margin: "0.5rem" }}
+          size="sm"
+          style={{ margin: '0.5rem' }}
           onClick={() => onChange(`${value}.prototype`)}
         >
           <ObjectExpression>{value}</ObjectExpression>.

@@ -1,8 +1,8 @@
-import React, { forwardRef } from "react";
-import Input from "components/Input";
+import React, { forwardRef } from 'react';
+import Input from 'components/Input';
 
-import classes from "./SearchInput.module.scss";
-import { SearchIcon } from "./SearchIcon";
+import classes from './SearchInput.module.scss';
+import { SearchIcon } from './SearchIcon';
 
 export const SearchInput = forwardRef((props, ref) => {
   return (
@@ -18,6 +18,7 @@ export const SearchInput = forwardRef((props, ref) => {
         size="xl"
         {...props}
       />
+      <span className={classes.shortKey}>/</span>
     </div>
   );
 });
