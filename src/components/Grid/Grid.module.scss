@@ -1,0 +1,26 @@
+.grid {
+  position: relative;
+
+  &.spacing-1 {
+    .col {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.col {
+  flex: 0 0 auto;
+}
+
+.row {
+  display: flex;
+}

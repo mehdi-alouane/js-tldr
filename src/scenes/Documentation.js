@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import urlJoin from 'url-join';
 
 import Markdown from 'components/Markdown';
-import mdSrc from 'data/Array/slice.md';
 
-export const Documentation = props => {
+export const Documentation = ({ match: { params } }) => {
+  const { domain, method } = params;
   const [md, setMd] = useState(null);
   useEffect(() => {
-    fetch(mdSrc)
+    fetch(urlJoin(process.env.REACT_APP_DOCS_PATH, domain, method))
       .then(rs => rs.text())
       .then(mdText => setMd(mdText));
   });

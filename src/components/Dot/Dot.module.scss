@@ -1,0 +1,9 @@
+@import '../../colors.scss';
+
+.dot {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: $dotColor;
+  border-radius: 50%;
+}
