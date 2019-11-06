@@ -16,5 +16,6 @@ arr.slice(begin, end);
 [1, 2, 3, 4, 5].slice(2, 3); // -> [3, 4]
 ```
 
+---
 
 [MDN reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
