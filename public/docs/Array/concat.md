@@ -16,4 +16,6 @@ const newArr = originalArr.concat([value1[, value2[, ...[, valueN]]]])_
 ['a', 'b', 'c'].concat(1, [2, 3], [[4]]); // -> ['a', 'b', 'c', 1, 2, 3, [4]]
 ```
 
+---
+
 [MDN reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
