@@ -46,16 +46,24 @@ export const About = props => {
           <Bracket>JS</Bracket> tl;dr
         </strong>{' '}
         tool, our goal is to provide info on language essentials in a noiseless,
-        zen-mode manner, so you can focus on what matters - built great stuff.
+        zen-mode manner, so you can focus on what matters - build great stuff.
       </P>
 
       <P>
         <strong>
           <Bracket>JS</Bracket> tl;dr
         </strong>{' '}
-        tool is free and AD-less forever. It's also an open-source tool. You can
-        give it back to the community by contributing to docs, web app or become
-        a Patreon so that you cover all our time and material expenses.
+        tool is free and AD-less forever. It's also an{' '}
+        <a
+          href="https://github.com/RusinovAnton/js-tldr"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          open-source
+        </a>{' '}
+        tool. You can give it back to the community by contributing to docs, web
+        app or become a Patreon so that you cover all our time and material
+        expenses.
       </P>
 
       <P>
