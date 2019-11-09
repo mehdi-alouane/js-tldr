@@ -1,5 +1,4 @@
 import React, { memo, useRef, useState, useEffect, useMemo } from 'react';
-import keycodes from 'keycodes';
 import Fuse from 'fuse.js';
 
 import { loadDocsData } from 'data/loadDocsData';
