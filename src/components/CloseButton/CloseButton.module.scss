@@ -1,0 +1,44 @@
+@import '../../colors';
+
+.button {
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $bg-light;
+  }
+
+  &:focus-visible {
+    box-shadow: $focus-outline;
+  }
+
+  &.block {
+    display: block;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    background-color: $white;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 2px;
+    top: 9px;
+    left: 17px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

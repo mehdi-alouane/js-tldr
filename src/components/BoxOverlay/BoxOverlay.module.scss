@@ -1,15 +1,14 @@
+@import '../../colors';
+
 .box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1rem;
+  position: relative;
+  padding: 3rem;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .close {
   position: absolute;
   top: 1rem;
   right: 1rem;
-
 }

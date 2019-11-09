@@ -18,6 +18,7 @@ body {
   background-color: $bg;
   color: $white;
   font-family: 'Fira Mono', monospace;
+  line-height: 1.8;
 }
 
 h1,
@@ -28,7 +29,7 @@ h5,
 h6,
 p {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 a {
