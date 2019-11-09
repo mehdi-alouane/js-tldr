@@ -2,10 +2,8 @@
 
 **The `entries()` method returns an array of a given object's own enumerable property _[key, value]_ pairs**, in the same order as that provided by a `for...in` loop.
 
-```
-NOTE: The order of the array returned by `Object.entries()` does not depend on how an object is defined.
-If there is a need for certain ordering then the array should be sorted first.
-```
+> NOTE: The order of the array returned by `Object.entries()` does not depend on how an object is defined.
+> If there is a need for certain ordering then the array should be sorted first.
 
 ## Syntax
 
