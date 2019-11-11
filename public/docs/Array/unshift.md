@@ -1,19 +1,29 @@
-# unshift
-## Description
-The ```unshift``` method inserts the given values to the beginning of an array-like object.
+# Array.prototype.unshift()
+
+The `unshift` method inserts the given values to the beginning of an array-like object.
+Result of `unshift` call is length of modified array.
+
 ## Syntax
-```arr.unshift```(element1[, ...[, elementN]])
-## Examples
-```let arr = [1, 2];```
 
-```arr.unshift(0);``` // result of the call is 3, which is the new array length
-// arr is [0, 1, 2]
+```js
+const arrayLength = array.unshift(value1, value2, ..., valueN);
+```
 
-```arr.unshift(-2, -1);``` // the new array length is 5
-// arr is [-2, -1, 0, 1, 2]
+## Usage examples
 
-```arr.unshift([-4, -3]);``` // the new array length is 6
-// arr is [[-4, -3], -2, -1, 0, 1, 2]
+```js
+let arr = [1, 2];
 
-```arr.unshift([-7, -6], [-5]);``` // the new array length is 8
-// arr is [ [-7, -6], [-5], [-4, -3], -2, -1, 0, 1, 2 ]
+arr.unshift(0); // -> 3
+arr; // -> [0, 1, 2]
+
+arr.unshift(-2, -1); // 5
+arr; // -> [-2, -1, 0, 1, 2]
+
+arr.unshift([-4, -3]); // -> 6
+arr; // -> [[-4, -3], -2, -1, 0, 1, 2]
+```
+
+---
+
+[MDN reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
