@@ -36,8 +36,8 @@ export const About = props => {
       </P>
 
       <P>
-        But sometimes all we need is a hint on how to use some method correctly
-        or what its arguments are without going deeper into details.
+        But sometimes all we need is just a hint on how to use some method
+        correctly or what its arguments are without going deeper into details.
       </P>
 
       <P>
@@ -62,13 +62,16 @@ export const About = props => {
           open-source
         </a>{' '}
         tool. You can give it back to the community by contributing to docs, web
-        app or become a Patreon so that you cover all our time and material
+        app or become a patrons so that you cover all our time and material
         expenses.
       </P>
 
       <P>
-        We're happy to recognize our Patreons! Become one and we'll add info
-        about you here.
+        We're happy to recognize our patrons! Become one and we'll add info
+        about you here.{' '}
+        <a href="https://www.patreon.com/jstldr">
+          https://www.patreon.com/jstldr
+        </a>
       </P>
     </BoxOverlay>
   );
