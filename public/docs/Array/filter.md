@@ -5,7 +5,10 @@
 ## Syntax
 
 ```js
-const modifiedArray = originalArray.filter(callback(element, index, array):Boolean, thisArgument);
+const modifiedArray = originalArray.filter(
+  (callback(element, index, array): Boolean),
+  thisArgument,
+);
 ```
 
 ## Usage examples
@@ -15,8 +18,8 @@ const words = ['too', 'long', 'did', 'not', 'read'];
 words.filter(word => word.length > 3);
 // -> ["long", "read"]
 
- ['too', 'long', 'did', 'not', 'read'].filter(word => word.length > 3);
- // -> ["long", "read"]
+['too', 'long', 'did', 'not', 'read'].filter(word => word.length > 3);
+// -> ["long", "read"]
 ```
 
 ---

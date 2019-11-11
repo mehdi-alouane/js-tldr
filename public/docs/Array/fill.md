@@ -22,7 +22,8 @@ const modifiedArray = originalArray.fill(value, startIndex, endIndex);
 Array(3).fill(4); // -> [4, 4, 4]
 
 const array = Array(3).fill({}); // -> [{}, {}, {}];
-array[0].hi = 'hi'; array; // -> [{ hi: "hi" }, { hi: "hi" }, { hi: "hi" }]
+array[0].hi = 'hi';
+array; // -> [{ hi: "hi" }, { hi: "hi" }, { hi: "hi" }]
 ```
 
 ---

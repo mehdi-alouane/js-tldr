@@ -14,16 +14,16 @@ Object.entries(object);
 ## Usage examples
 
 ```js
-Object.entries({ 0: 'T', 1: 'L', 2: 'D', 3: 'R' }); 
+Object.entries({ 0: 'T', 1: 'L', 2: 'D', 3: 'R' });
 // -> [ ['0', 'T'], ['1', 'L'], ['2', 'D'], ['3', 'R'] ]
 
 Object.entries({ 100: 'a', 2: 'b', 7: 'c' });
- // -> [ ['2', 'b'], ['7', 'c'], ['100', 'a'] ]
+// -> [ ['2', 'b'], ['7', 'c'], ['100', 'a'] ]
 
-Object.entries('TL:DR'); 
+Object.entries('TL:DR');
 // -> [ [`0`, `T`], [`1`, `L`], [`2`, `:`], [`3`, `D`], [`4`, `R`] ]
 
-Object.entries(100); 
+Object.entries(100);
 // -> []
 ```
 

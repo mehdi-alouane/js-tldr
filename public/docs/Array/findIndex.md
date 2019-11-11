@@ -5,13 +5,15 @@ The `findIndex()` method **returns the index of the first element in the array**
 > NOTE: If no element passed the test, `findIndex()` returns -1
 
 ## Syntax
+
 ```js
-array.findIndex(callback(element, index, array):Boolean, thisArgument);
+array.findIndex((callback(element, index, array): Boolean), thisArgument);
 ```
 
 ## Usage examples
+
 ```js
-[1952, 1956, 1960, 1964].findIndex((year) => year > 1959 );
+[1952, 1956, 1960, 1964].findIndex(year => year > 1959);
 // -> 2
 ```
 
