@@ -1,13 +1,15 @@
 # Array.prototype.find()
 
-The `find()` method **returns** the **value** of the **first element** in array that **satisfies** testing **function**.
+The `find()` method **returns the value** of a first element in array that satisfies testing function.
 
 ## Syntax
+
 ```js
 array.find(callback(element, index, array):Boolean, thisArgument);
 ```
 
 ## Usage examples
+
 ```js
 const users = [
     {name:'Michelangelo', country:'Italy'},
