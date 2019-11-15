@@ -23,4 +23,4 @@ jobs:
       - name: Deploy app to Google Cloud
         uses: actions/gcloud/cli@master
         with:
-          args: app deploy --project=${{ secrets.CLOUDSDK_CORE_PROJECT }}
+          args: app deploy
