@@ -1,7 +1,10 @@
 name: Deploy app to prod
 on:
   push:
-    tags: -v1.**
+    branches:
+      - master
+    tags:
+      - v1.**
 jobs:
   install:
     name: Install dependencies
