@@ -6,8 +6,8 @@ on:
     tags:
       - v1.**
 jobs:
-  install:
-    name: Install dependencies
+  install-build-deploy:
+    name: make everything
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -15,22 +15,7 @@ jobs:
         with:
           node-version: '10.x'
       - run: npm install
-
-  build:
-    name: Build the dist
-    runs-on: ubuntu-latest
-    needs: install
-    steps:
       - run: npm run build
-
-  # TODO:
-  # test:
-
-  deploy:
-    name: Deploy app to Google Cloud
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Authenticate Google Cloud
         uses: actions/gcloud/auth@master
         env:
