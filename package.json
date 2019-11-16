@@ -1,6 +1,6 @@
 {
   "name": "js-tldr",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.3",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
