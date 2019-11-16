@@ -1,6 +1,6 @@
 # Array.from()
 
-The `from` method creates a new, shallow-copied Array instance from an array-like or iterable object
+The `from` method creates a new, shallow-copied Array instance from an array-like or iterable object.
 
 ## Syntax
 
