@@ -5,24 +5,19 @@ The `concat` method concatenates the string arguments to the calling string and 
 ## Syntax
 
 ```js
-str.concat(string2, string3, ..., stringN)
+string.concat(string1, string2, ..., stringN);
 ```
 
 ## Usage examples
 
 ```js
-var hello = 'Hello, ';
-console.log(hello.concat('Kevin', '. Have a nice day.'));
-/* Hello, Kevin. Have a nice day. */
-
-var greetList = ['Hello', ' ', 'Venkat', '!'];
-"".concat(...greetList); // -> "Hello Venkat!"
-
-"".concat({}); // -> [object Object]
-"".concat([]); // -> ""
-"".concat(null); // -> "null"
-"".concat(true); // -> "true"
-"".concat(4, 5); // -> "45"
+'Hello, '.concat('Kevin', '. Have a nice day.'); // -> Hello, Kevin. Have a nice day.
+''.concat(...['Hello', ' ', 'Venkat', '!']); // -> "Hello Venkat!"
+''.concat({}); // -> [object Object]
+''.concat([]); // -> ""
+''.concat(null); // -> "null"
+''.concat(true); // -> "true"
+''.concat(4, 5); // -> "45"
 ```
 
 ---

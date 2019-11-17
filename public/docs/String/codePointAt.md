@@ -5,7 +5,7 @@ The `codePointAt` method returns a non-negative integer that is the Unicode code
 ## Syntax
 
 ```js
-str.codePointAt(pos)
+string.codePointAt(index);
 ```
 
 ## Usage examples
@@ -17,7 +17,8 @@ str.codePointAt(pos)
 'XYZ'.codePointAt(42); // -> undefined
 
 for (let codePoint of '\ud83d\udc0e\ud83d\udc71\u2764') {
-   console.log(codePoint.codePointAt(0).toString(16)) } // -> '1f40e', '1f471', '2764'  
+  console.log(codePoint.codePointAt(0).toString(16));
+} // -> '1f40e', '1f471', '2764'
 ```
 
 ---

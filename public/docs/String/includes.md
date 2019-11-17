@@ -1,24 +1,24 @@
 # String.prototype.includes()
 
-The `includes` method determines whether one string may be found within another string, returning true or false as appropriate.
+The `includes` method determines whether one string may be found within another string, returning a boolean value.
 
 ## Syntax
 
 ```js
-str.includes(searchString, position)
+string.includes(searchString, position);
 ```
 
 ## Usage examples
 
 ```js
-const str = 'To be, or not to be, that is the question.';
+const string = 'To be, or not to be, that is the question.';
 
-console.log(str.includes('To be'));       // -> true
-console.log(str.includes('question'));    // -> true
-console.log(str.includes('nonexistent')); // -> false
-console.log(str.includes('To be', 1));    // -> false
-console.log(str.includes('TO BE'));       // -> false
-console.log(str.includes(''))             // -> true
+string.includes('To be'); // -> true
+string.includes('To be', 1); // -> false
+string.includes('question'); // -> true
+string.includes('nonexistent'); // -> false
+string.includes('TO BE'); // -> false
+string.includes(''); // -> true
 ```
 
 ---
