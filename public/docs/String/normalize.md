@@ -1,29 +1,28 @@
 # String.prototype.normalize()
 
-The `normalize` method returns the Unicode Normalization Form of a given string (if the value isn't a string, it will be converted to one first).
+**The `normalize` method returns the Unicode Normalization Form of a given _string_**. If the value isn't a string, it will be converted to one first.
+
+The _form_ parameter is one of "NFC", "NFD", "NFKC", or "NFKD", specifying the Unicode Normalization Form. If omitted or undefined, "NFC" is used.
+
+See more details at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize#Parameters)
 
 ## Syntax
 
 ```js
-str.normalize(form)
+const normalizedForm = string.normalize(form);
 ```
 
 ## Usage examples
 
 ```js
-// Initial string
-
 // U+1E9B: LATIN SMALL LETTER LONG S WITH DOT ABOVE
 // U+0323: COMBINING DOT BELOW
-var str = '\u1E9B\u0323';
-
-
-// Canonically-composed form (NFC)
-
-// U+1E9B: LATIN SMALL LETTER LONG S WITH DOT ABOVE
-// U+0323: COMBINING DOT BELOW
-str.normalize('NFC'); // '\u1E9B\u0323'
-str.normalize();      // same as above
+const str = '\u1E9B\u0323';
+str.normalize(); // -> '\u1E9B\u0323'
+str.normalize('NFC'); // -> '\u1E9B\u0323'
+str.normalize('NFD'); // -> '\u017F\u0323\u0307'
+str.normalize('NFKC'); // -> '\u1E69'
+str.normalize('NFKD'); // -> '\u0073\u0323\u0307'
 ```
 
 ---

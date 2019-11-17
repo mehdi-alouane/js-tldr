@@ -1,11 +1,11 @@
 # indexOf
 
-The `indexOf` method returns the **index** within the calling `String` object of the first occurrence of the specified value, starting the search at `fromIndex`. It returns **-1** if the value is not found.
+**The `indexOf` method returns the _index_ of the first occurrence of the specified _searchValue_ within a _string_**, starting the search at _fromIndex_. It returns **-1** if the _searchValue_ is not found.
 
 ## Syntax
 
 ```js
-string.indexOf(searchValue, fromIndex);
+const index = string.indexOf(searchValue, fromIndex);
 ```
 
 ## Usage examples

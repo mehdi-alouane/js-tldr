@@ -1,27 +1,34 @@
 # String.prototype.match()
 
-The `match` method retrieves the result of matching a string against a regular expression.
+The `match` method retrieves the result of matching a _string_ against a _regular expression_.
 
 ## Syntax
 
 ```js
-str.match(regexp)
+const result = string.match(regexp);
 ```
 
 ## Usage examples
 
 ```js
-var str = 'For more information, see Chapter 3.4.5.1';
-var re = /see (chapter \d+(\.\d)*)/i;
-var found = str.match(re);
+'aaa'.match(/b/); // -> null
+```
 
-console.log(found);
+```js
+const string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+const regexp = /[A-E]/gi;
+string.match(regexp); // -> ['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 'd', 'e']
+```
 
-var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-var regexp = /[A-E]/gi;
-var matches_array = str.match(regexp);
-
-console.log(matches_array); // -> ['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 'd', 'e']
+```js
+const string = 'For more information, see Chapter 3.4.5.1';
+const regexp = /see (chapter \d+(\.\d)*)/i;
+string.match(regexp); // -> // [
+//  'see Chapter 3.4.5.1',
+//  'Chapter 3.4.5.1', '.1',
+//  index: 22,
+//  input: 'For more information, see Chapter 3.4.5.1'
+// ]
 ```
 
 ---

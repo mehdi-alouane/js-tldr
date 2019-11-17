@@ -1,19 +1,19 @@
 # String.prototype.search()
 
+The `search` method executes a search for a match between a _regular expression_ and a _given string_ and returns an _index_ of the first match.
+
 ## Syntax
 
 ```js
-str.search(regexp)
+const resultIndex = string.search(regexp);
 ```
 
 ## Usage examples
 
 ```js
-var str = "hey JudE";
-var re = /[A-Z]/g;
-var re2 = /[.]/g;
-console.log(str.search(re));  // -> returns 4, which is the index of the first capital letter "J"
-console.log(str.search(re2)); // -> returns -1 cannot find '.' dot punctuation
+const string = 'hey JudE';
+string.search(/[A-Z]/g); // -> 4
+string.search(/[.]/g); // -> -1
 ```
 
 ---

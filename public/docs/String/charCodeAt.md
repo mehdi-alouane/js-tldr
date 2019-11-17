@@ -1,11 +1,11 @@
 # String.prototype.charCodeAt()
 
-The `charCodeAt` method returns an integer between **0** and **65535** representing the UTF-16 code unit at the given index.
+The `charCodeAt` method returns an _integer_ between **0** and **65535** representing the UTF-16 code unit at the given _index_ of a _string_.
 
 ## Syntax
 
 ```js
-const code = string.charCodeAt(index);
+const integer = string.charCodeAt(index);
 ```
 
 ## Usage examples

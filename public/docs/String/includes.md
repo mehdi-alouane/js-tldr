@@ -1,11 +1,11 @@
 # String.prototype.includes()
 
-The `includes` method determines whether one string may be found within another string, returning a boolean value.
+The `includes` method determines whether _searchString_ may be found within a _string_, returning a _boolean_ value as a _result_.
 
 ## Syntax
 
 ```js
-string.includes(searchString, position);
+const result = string.includes(searchString, position);
 ```
 
 ## Usage examples

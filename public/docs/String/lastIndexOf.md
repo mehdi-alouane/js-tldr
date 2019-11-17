@@ -1,22 +1,23 @@
 # String.prototype.lastIndexOf()
 
-The `lastIndexOf` method returns the index within the calling *String* object of the last occurrence of the specified value, searching backwards from fromIndex. Returns -1 if the value is not found.
+**The `lastIndexOf` method returns the _index_ of the last occurrence of the specified _searchValue_ within a _string_**, searching backwards from _fromIndex_. It returns **-1** if the _searchValue_ is not found.
 
 ## Syntax
 
 ```js
-str.lastIndexOf(searchValue, fromIndex)
+const index = string.lastIndexOf(searchValue, fromIndex);
 ```
 
 ## Usage examples
 
 ```js
-var anyString = 'Brave new world';
-
-console.log('The index of the first w from the beginning is ' + anyString.indexOf('w')); // -> logs 8
-console.log('The index of the first w from the end is ' + anyString.lastIndexOf('w')); // -> logs 10
-console.log('The index of "new" from the beginning is ' + anyString.indexOf('new')); // -> logs 6
-console.log('The index of "new" from the end is ' + anyString.lastIndexOf('new')); // -> logs 6
+const string = 'Brave new world';
+string.indexOf('w'); // -> 8
+string.lastIndexOf('w'); // -> 10
+string.indexOf('new'); // -> 6
+string.lastIndexOf('new'); // -> 6
+string.lastIndexOf(''); // -> 15
+string.lastIndexOf('', 5); // -> 5
 ```
 
 ---

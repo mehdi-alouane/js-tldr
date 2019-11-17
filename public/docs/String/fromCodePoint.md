@@ -1,11 +1,11 @@
 # String.fromCodePoint()
 
-The static `fromCodePoint` method returns a string created by using the specified sequence of code points.
+The static `fromCodePoint` method returns a _string_ created by using the specified sequence of code points (_numN_).
 
 ## Syntax
 
 ```js
-String.fromCodePoint(num1, num2, ..., numN);
+const string String.fromCodePoint(num1, num2, ..., numN);
 ```
 
 ## Usage examples

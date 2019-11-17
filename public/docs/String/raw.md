@@ -1,26 +1,24 @@
 # String.raw()
 
-The static `raw` method is a tag function of **template literals**, similar to the r prefix in Python or the @ prefix in C# for string literals (yet there is a difference: see explanations in this issue). It's used to get the raw string form of template strings, that is, substitutions (e.g. ${foo}) are processed, but escapes (e.g. \n) are not.
+The static `raw` method is a tag function of **template literals**, which is used to get the _raw string_ form of _template strings_, that is, substitutions (e.g. \${foo}) are processed, but escapes (e.g. \n) are not.
 
 ## Syntax
 
 ```js
-String.raw(callSite, ...substitutions)
-
-String.raw`templateString`
+String.raw`templateString`;
+String.raw(callSite, ...substitutions);
 ```
 
 ## Usage examples
 
 ```js
-String.raw`Hi\n${2+3}!`;
-// 'Hi\n5!', the character after 'Hi'
-// is not a newline character,
-// '\' and 'n' are two characters.
+String.raw`Hi\n${2 + 3}!`; // -> 'Hi\n5!'
 
 let name = 'Bob';
-String.raw`Hi\n${name}!`;
-// 'Hi\nBob!', substitutions are processed.
+String.raw`Hi\n${name}!`; // -> 'Hi\nBob!'
+
+String.raw({ raw: ['foo', 'bar', 'baz'] }, 2 + 3, 'Java' + 'Script'); // -> 'foo5barJavaScriptbaz'
+String.raw({ raw: 'test' }, 0, 1, 2); // -> 't0e1s2t'
 ```
 
 ---

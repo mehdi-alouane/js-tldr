@@ -1,27 +1,27 @@
 # String.prototype.replace()
 
-The `replace` method returns a new string with some or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match. If pattern is a string, only the first occurrence will be replaced.
+The `replace` method returns a _new string_ with some or all matches of a _pattern_ replaced by a _replacement_. The _pattern_ can be a `string` or a `RegExp`, and the replacement can be a `string` or a `function` to be called for each match.
+If pattern is a `string`, **only the first** occurrence will be replaced.
 
 ## Syntax
 
 ```js
-var newStr = str.replace(regexp|substr, newSubstr|function)
+var newString = string.replace(regexp|substring, newSubstring|function);
 ```
 
 ## Usage examples
 
 ```js
-var str = 'Twas the night before Xmas...';
-var newstr = str.replace(/xmas/i, 'Christmas');
-console.log(newstr);  // -> Twas the night before Christmas...
+'Twas the night before Xmas...'.replace(/xmas/i, 'Christmas'); // -> Twas the night before Christmas...
 
-var re = /apples/gi;
-var str = 'Apples are round, and apples are juicy.';
-var newstr = str.replace(re, 'oranges');
-console.log(newstr); // -> oranges are round, and oranges are juicy.
+'Apples are round, and apples are juicy.'.replace(/apples/gi, 'oranges'); // -> oranges are round, and oranges are juicy.
+
+'abc12345#$*%'.replace(
+  /([^\d]*)(\d*)([^\w]*)/,
+  (match, p1, p2, p3, offset, string) => [p1, p2, p3].join(' - '),
+); // -> abc - 12345 - #$*%
 ```
 
 ---
 
 [MDN reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
-

@@ -1,25 +1,28 @@
 # String.prototype.localeCompare()
 
-The `localeCompare` method returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order.
+The `localeCompare` method returns a number indicating whether a _reference string_ comes before or after or is the same as the _compare string_ in sort order.
 
 ## Syntax
 
 ```js
-referenceStr.localeCompare(compareString, locales, options)
+const number = referenceString.localeCompare(compareString, locales, options);
 ```
+
+See more info on `locales` and `options` parameters at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Parameters).
 
 ## Usage examples
 
+<!-- prettier-ignore-start -->
 ```js
-// The letter "a" is before "c" yielding a negative value
-'a'.localeCompare('c'); // -2 or -1 (or some other negative value)
+'a'.localeCompare('a'); // -> 0
+'a'.localeCompare('c'); // -> -1
+'check'.localeCompare('against'); // -> 1
 
-// Alphabetically the word "check" comes after "against" yielding a positive value
-'check'.localeCompare('against'); // 2 or 1 (or some other positive value)
-
-// "a" and "a" are equivalent yielding a neutral value of zero
-'a'.localeCompare('a'); // 0
+['réservé', 'Premier', 'Cliché', 'communiqué', 'café', 'Adieu'].sort(
+  (a, b) => a.localeCompare(b, 'fr', { ignorePunctuation: true })
+); // -> ['Adieu', 'café', 'Cliché', 'communiqué', 'Premier', 'réservé']
 ```
+<!-- prettier-ignore-end -->
 
 ---
 
