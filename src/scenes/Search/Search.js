@@ -26,6 +26,7 @@ export const Search = memo(() => {
       ? searchEngine
           .search(query)
           .map(({ item, score }) => ({ score, ...item }))
+          .filter(option => option.score < 0.2)
       : [];
     setOptions(options);
   };
