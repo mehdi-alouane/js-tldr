@@ -32,7 +32,7 @@ export const Documentation = ({ match: { params } }) => {
         console.error(error);
         setLoading(false);
       });
-  });
+  }, []);
 
   return (
     <BoxOverlay>
