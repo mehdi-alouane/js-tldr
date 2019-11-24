@@ -76,11 +76,6 @@ In the description body:
 
 ![description example](description_example.png)
 
-```js
-
-## Syntax
-const resultString = string.join(joinString);
-```
 
 ##### Code
 
