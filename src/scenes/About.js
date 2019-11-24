@@ -91,6 +91,17 @@ export const About = props => {
         </a>
       </P>
       <P>
+        Read the story in the{' '}
+        <OutboundLink
+          to="https://medium.com/@rusinovantondev/js-tl-dr-zen-mode-web-docs-for-javascript-developers-cf45e0143a09"
+          target="_blank"
+          rel="noreferrer noopener"
+          eventLabel="Medium"
+        >
+          Medium article
+        </OutboundLink>
+      </P>
+      <P>
         <Link to={PRIVACY_POLICY}>Privacy Policy</Link>
       </P>
     </BoxOverlay>
