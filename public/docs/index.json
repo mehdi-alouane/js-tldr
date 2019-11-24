@@ -6,7 +6,7 @@
       "description": "",
       "path": "/docs/Array",
       "methods": {
-        "static": ["from", "isArray", "observe", "of"],
+        "static": ["from", "isArray", "of"],
         "prototype": [
           "concat",
           "copyWithin",
@@ -36,7 +36,6 @@
           "sort",
           "splice",
           "toLocaleString",
-          "toSource",
           "toString",
           "unshift",
           "values"
@@ -62,7 +61,6 @@
           "toFixed",
           "toLocaleString",
           "toPrecision",
-          "toSource",
           "toString",
           "valueOf"
         ]
@@ -83,10 +81,10 @@
           "endsWith",
           "includes",
           "indexOf",
-          "italics",
           "lastIndexOf",
           "localeCompare",
           "match",
+          "matchAll",
           "normalize",
           "padEnd",
           "padStart",
@@ -98,37 +96,52 @@
           "startsWith",
           "substr",
           "substring",
-          "sup",
           "toLocaleLowerCase",
           "toLocaleUpperCase",
           "toLowerCase",
           "toString",
           "toUpperCase",
           "trim",
-          "trimRight",
           "trimEnd",
           "trimLeft",
+          "trimRight",
           "trimStart",
           "valueOf"
-        ],
-        "deprecated": [
-          "anchor",
-          "big",
-          "blink",
-          "bold",
-          "fixed",
-          "fontcolor",
-          "fontsize",
-          "italics",
-          "link",
-          "small",
-          "strike",
-          "sub",
-          "substr",
-          "sup"
-        ],
-        "obsolete": ["quote"],
-        "nonStandard": ["toSource"]
+        ]
+      }
+    },
+    {
+      "name": "Function",
+      "type": "object",
+      "description": "",
+      "path": "/docs/Function",
+      "properties": {
+        "static": ["length", "name"]
+      },
+      "methods": {
+        "prototype": ["apply", "bind", "call", "toString"]
+      }
+    },
+    {
+      "name": "RegExp",
+      "type": "object",
+      "description": "",
+      "path": "/docs/RegExp",
+      "properties": {
+        "prototype": [
+          "dotAll",
+          "flags",
+          "global",
+          "ignoreCase",
+          "lastIndex",
+          "multiline",
+          "source",
+          "sticky",
+          "unicode"
+        ]
+      },
+      "methods": {
+        "prototype": ["exec", "test", "toString"]
       }
     }
   ]
