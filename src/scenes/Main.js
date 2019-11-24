@@ -6,7 +6,8 @@ import { Documentation } from './Documentation';
 import Search from './Search';
 
 import classes from './Main.module.scss';
-import { ABOUT, DOCS, HOME } from './routes';
+import { ABOUT, DOCS, HOME, PRIVACY_POLICY } from './routes';
+import { PrivacyPolicy } from './PrivacyPolicy';
 
 export const Main = () => {
   return (
@@ -16,6 +17,7 @@ export const Main = () => {
           <Route exact path={HOME} component={Search} />
           <Route path={DOCS} component={Documentation} />
           <Route path={ABOUT} component={About} />
+          <Route path={PRIVACY_POLICY} component={PrivacyPolicy} />
         </Switch>
       </main>
     </>

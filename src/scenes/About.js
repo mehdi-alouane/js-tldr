@@ -4,6 +4,8 @@ import { Title } from 'components/Typography/Title';
 import { P } from 'components/Typography/P';
 import { Bracket } from 'components/Typography';
 import { OutboundLink } from 'react-ga';
+import { PRIVACY_POLICY } from './routes';
+import { Link } from 'react-router-dom';
 
 export const About = props => {
   return (
@@ -25,9 +27,10 @@ export const About = props => {
       <P>
         We're inspired by such projects as the{' '}
         <OutboundLink
-          href="https://tldr.sh/"
+          to="https://tldr.sh/"
           rel="noreferrer noopener"
           target="_blank"
+          eventLabel="tldr"
         >
           tldr
         </OutboundLink>{' '}
@@ -39,7 +42,7 @@ export const About = props => {
         <br />
         See more details here:{' '}
         <OutboundLink
-          href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses"
+          to="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses"
           rel="noreferrer noopener"
           target="_blank"
           eventLabel="MDN license"
@@ -68,15 +71,15 @@ export const About = props => {
         </strong>{' '}
         tool is free and AD-less forever. It's also an{' '}
         <OutboundLink
-          href={process.env.REACT_APP_GITHUB_REPO_LINK}
+          to={process.env.REACT_APP_GITHUB_REPO_LINK}
           rel="noreferrer noopener"
           target="_blank"
           eventLabel="Github Repo"
         >
           open-source
         </OutboundLink>{' '}
-        ! You can give it back to the community by contributing to docs, web
-        app or become a patrons so that you cover all our time and material
+        ! You can give it back to the community by contributing to docs, web app
+        or become a patrons so that you cover all our time and material
         expenses.
       </P>
 
@@ -86,6 +89,9 @@ export const About = props => {
         <a href="https://www.patreon.com/jstldr">
           https://www.patreon.com/jstldr
         </a>
+      </P>
+      <P>
+        <Link to={PRIVACY_POLICY}>Privacy Policy</Link>
       </P>
     </BoxOverlay>
   );
